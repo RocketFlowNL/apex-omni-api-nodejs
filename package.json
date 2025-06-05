@@ -1,0 +1,22 @@
+{
+  "name": "apex-omni",
+  "version": "1.0.0",
+  "description": "This is a test program to connect to your Apex wallet via the API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "register": "node apex-register.js",
+    "account-info": "node examples/get-account-info.js",
+    "monitor-prices": "node examples/monitor-prices.js",
+    "check-activity": "node check-all-activity.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "apexpro-connector-node": "^0.2.0-alpha.14",
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0"
+  }
+}
