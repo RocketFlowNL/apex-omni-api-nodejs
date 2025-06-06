@@ -286,3 +286,15 @@ The Apex Omni API has rate limits. If you exceed them, you'll receive a 429 erro
 ## WebSocket Support
 
 This package currently supports REST API only. WebSocket support may be added in future versions.
+
+## Credits
+
+apex-omni-api is created and maintained by **Job Wiegant** of [RocketFlow](https://rocketflow.nl).
+
+## Support
+
+If you find this package useful in your trading applications, consider supporting its development:
+
+☕ [Buy Me a Coffee](https://coff.ee/jobwiegant)
+
+For questions or issues, please visit our [GitHub repository](https://github.com/RocketFlowNL/apex-omni-api-nodejs).

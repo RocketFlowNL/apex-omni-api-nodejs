@@ -139,6 +139,16 @@ Feel free to:
 - Contact the maintainer: job@rocketflow.nl
 - Join discussions in existing issues
 
+## Support the Project
+
+If you appreciate this project and want to support its development:
+
+☕ [Buy Me a Coffee](https://coff.ee/jobwiegant)
+
+## Credits
+
+apex-omni-api is created and maintained by **Job Wiegant** of [RocketFlow](https://rocketflow.nl).
+
 ## License
 
 By contributing, you agree that your contributions will be licensed under the MIT License.

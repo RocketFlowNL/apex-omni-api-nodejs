@@ -182,6 +182,18 @@ const fills = await client.getFills();
 
 Contributions are welcome! Please read our [Contributing Guide](./CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
+## Credits
+
+This package was created and is maintained by **Job Wiegant** of [RocketFlow](https://rocketflow.nl).
+
+## Support the Project
+
+If you find this package helpful in your projects, consider supporting its development:
+
+☕ [Buy Me a Coffee](https://coff.ee/jobwiegant)
+
+Your support helps maintain and improve this package!
+
 ## License
 
 MIT License - see [LICENSE](./LICENSE) file for details.
