@@ -6,6 +6,24 @@
 npm install apex-omni-api
 ```
 
+## Testing Your Setup
+
+After installation, you can verify your setup:
+
+```javascript
+const { testSetup } = require('apex-omni-api');
+
+// Test public API only
+await testSetup();
+
+// Test with credentials
+await testSetup(
+    'your-api-key',
+    'your-api-secret',
+    'your-passphrase'
+);
+```
+
 ## Basic Usage
 
 ```javascript

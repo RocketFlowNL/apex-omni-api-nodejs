@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2025-01-06
+
+### Added
+- Built-in `testSetup` function that can be used in any project
+- Allows users to verify their setup after installing the package
+- Works with or without credentials
+- Exported as part of the main package API
+
+### Changed
+- Test functionality is now part of the package itself, not just development scripts
+
 ## [1.1.1] - 2025-01-06
 
 ### Added
