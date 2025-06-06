@@ -1,6 +1,10 @@
 # Apex Omni API Client (Node.js)
 
-A Node.js client for interacting with the Apex Omni exchange API.
+[![npm version](https://badge.fury.io/js/apex-omni-api.svg)](https://www.npmjs.com/package/apex-omni-api)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node.js Version](https://img.shields.io/node/v/apex-omni-api.svg)](https://nodejs.org)
+
+A Node.js client library for interacting with the Apex Omni exchange API.
 
 ## Author
 
@@ -12,10 +16,43 @@ Email: job@rocketflow.nl
 If you find this project helpful, consider buying me a coffee!  
 ☕ [Buy Me a Coffee](https://coff.ee/jobwiegant)
 
-## Setup
+## Documentation
 
-1. Install dependencies:
+- [Usage Guide](./USAGE.md) - Detailed usage examples
+- [API Reference](./API.md) - Complete API documentation
+- [Contributing](./CONTRIBUTING.md) - How to contribute
+- [Testing](./TESTING.md) - Testing guidelines
+- [Changelog](./CHANGELOG.md) - Version history
+
+## Installation
+
+```bash
+npm install apex-omni-api
+```
+
+## Quick Start
+
+```javascript
+const ApexOmniClient = require('apex-omni-api');
+
+// Initialize the client
+const client = new ApexOmniClient(
+    'your-api-key',
+    'your-api-secret',
+    'your-passphrase'
+);
+
+// Example: Get server time
+const time = await client.getTime();
+console.log('Server time:', time);
+```
+
+## Development Setup
+
+1. Clone the repository:
    ```bash
+   git clone https://github.com/RocketFlowNL/apex-omni-api-nodejs.git
+   cd apex-omni-api-nodejs
    npm install
    ```
 
@@ -87,12 +124,10 @@ npm run monitor-prices
 ```
 Shows available trading pairs, current prices, and order book data.
 
-## API Client
-
-The main client is in `apex-client.js`. Example usage:
+## API Client Usage
 
 ```javascript
-const ApexOmniClient = require('./apex-client');
+const ApexOmniClient = require('apex-omni-api');
 const client = new ApexOmniClient(apiKey, apiSecret, passphrase);
 
 // Get user info
@@ -130,10 +165,12 @@ const fills = await client.getFills();
 - `getTicker(symbol)` - Get ticker data
 - `getOrderBook(symbol, limit)` - Get order book
 
-## Documentation
+## External Resources
 
 - [Apex Pro API Documentation](https://api-docs.pro.apex.exchange/)
 - [Apex Omni Exchange](https://omni.apex.exchange)
+- [GitHub Repository](https://github.com/RocketFlowNL/apex-omni-api-nodejs)
+- [NPM Package](https://www.npmjs.com/package/apex-omni-api)
 
 ## Security Notes
 
@@ -141,6 +178,14 @@ const fills = await client.getFills();
 - Keep your API credentials secure
 - The `.gitignore` file excludes sensitive files
 
+## Contributing
+
+Contributions are welcome! Please read our [Contributing Guide](./CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
 ## License
 
 MIT License - see [LICENSE](./LICENSE) file for details.
+
+## Changelog
+
+See [CHANGELOG.md](./CHANGELOG.md) for a list of changes in each version.

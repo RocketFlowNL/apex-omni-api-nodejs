@@ -1,22 +1,41 @@
 {
-  "name": "apex-omni",
+  "name": "apex-omni-api",
   "version": "1.0.0",
-  "description": "This is a test program to connect to your Apex wallet via the API.",
+  "description": "Node.js client library for interacting with the Apex Omni exchange API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "register": "node apex-register.js",
-    "account-info": "node examples/get-account-info.js",
-    "monitor-prices": "node examples/monitor-prices.js",
-    "check-activity": "node check-all-activity.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["apex", "omni", "exchange", "api", "client", "trading"],
+  "keywords": [
+    "apex",
+    "omni",
+    "exchange",
+    "api",
+    "client",
+    "trading",
+    "cryptocurrency",
+    "defi",
+    "apex-omni",
+    "apex-exchange"
+  ],
   "author": "Job Wiegant <job@rocketflow.nl> (RocketFlow)",
   "license": "MIT",
   "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RocketFlowNL/apex-omni-api-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RocketFlowNL/apex-omni-api-nodejs/issues"
+  },
+  "homepage": "https://github.com/RocketFlowNL/apex-omni-api-nodejs#readme",
   "dependencies": {
-    "apexpro-connector-node": "^0.2.0-alpha.14",
-    "axios": "^1.9.0",
+    "axios": "^1.9.0"
+  },
+  "devDependencies": {
     "dotenv": "^16.5.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }

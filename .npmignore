@@ -1,0 +1,35 @@
+# Development files
+.env
+.env.example
+.git/
+.gitignore
+
+# Examples and scripts
+examples/
+apex-register.js
+
+# Editor directories
+.vscode/
+.idea/
+
+# Mac files
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Test files
+test/
+*.test.js
+*.spec.js
+
+# Documentation source files
+docs/
+
+# Build artifacts
+build/
+dist/
