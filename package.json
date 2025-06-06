@@ -1,6 +1,6 @@
 {
   "name": "apex-omni-api",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Node.js client library for interacting with the Apex Omni exchange API",
   "main": "index.js",
   "scripts": {

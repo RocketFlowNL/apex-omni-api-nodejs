@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] - 2025-01-06
+
+### Added
+- npm scripts for testing and running examples
+  - `test:credentials` - Test API credentials
+  - `example:public` - Run public API examples
+  - `example:private` - Run private API examples
+  - `example:bot` - Run trading bot example
+- test-credentials.js utility for verifying setup
+
+### Fixed
+- Handle undefined values in test output
+- Improved error messages for credential testing
+
 ## [1.1.0] - 2025-01-06
 
 ### Added
