@@ -20,6 +20,7 @@ If you find this project helpful, consider buying me a coffee!
 
 - [Usage Guide](./USAGE.md) - Detailed usage examples
 - [API Reference](./API.md) - Complete API documentation
+- [ApexEasy Guide](./EASY.md) - Simplified API wrapper
 - [Contributing](./CONTRIBUTING.md) - How to contribute
 - [Testing](./TESTING.md) - Testing guidelines
 - [Changelog](./CHANGELOG.md) - Version history
@@ -31,6 +32,24 @@ npm install apex-omni-api
 ```
 
 ## Quick Start
+
+### Option 1: Using ApexEasy (Recommended)
+
+```javascript
+const { ApexEasy } = require('apex-omni-api');
+
+// Public API (no auth needed)
+const apex = ApexEasy.public();
+const btcPrice = await apex.getPrice('BTC-USDT');
+console.log(`BTC: $${btcPrice.price}`);
+
+// Private API
+const apex = ApexEasy.authenticated(apiKey, apiSecret, passphrase);
+const account = await apex.getAccountSummary();
+console.log(`Balance: $${account.balance.available}`);
+```
+
+### Option 2: Using Direct Client
 
 ```javascript
 const ApexOmniClient = require('apex-omni-api');
@@ -125,6 +144,28 @@ npm run monitor-prices
 Shows available trading pairs, current prices, and order book data.
 
 ## API Client Usage
+
+### ApexEasy (Simplified API)
+
+The easiest way to use this package:
+
+```javascript
+const { ApexEasy } = require('apex-omni-api');
+
+// Public endpoints
+const apex = ApexEasy.public();
+const prices = await apex.getAllPrices();
+const orderBook = await apex.getOrderBook('BTC-USDT');
+
+// Private endpoints
+const apex = ApexEasy.authenticated(apiKey, apiSecret, passphrase);
+const orders = await apex.getMyOrders();
+const order = await apex.placeLimitOrder('BTC-USDT', 'buy', 0.001, 50000);
+```
+
+See [ApexEasy Guide](./EASY.md) for full documentation.
+
+### Direct Client (Full Control)
 
 ```javascript
 const ApexOmniClient = require('apex-omni-api');

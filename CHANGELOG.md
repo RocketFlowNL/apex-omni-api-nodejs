@@ -7,13 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2025-01-06
+
 ### Added
-- Comprehensive documentation (CONTRIBUTING.md, TESTING.md, USAGE.md)
-- Proper NPM package structure with index.js entry point
-- .npmignore file for clean package distribution
+- ApexEasy simplified wrapper class for easier API usage
+- Convenient methods for common operations (getAllPrices, watchPrice, getAccountSummary)
+- Built-in retry logic with exponential backoff
+- Formatted responses for better developer experience
+- Example scripts for public, private, and trading bot usage
+- Comprehensive documentation (CONTRIBUTING.md, TESTING.md, USAGE.md, EASY.md)
+- GitHub issue and PR templates
+- Credits and Buy Me a Coffee links
 
 ### Changed
 - Restructured package for NPM publishing
+- Updated README with ApexEasy examples
 - Removed unused dependencies (crypto, apexpro-connector-node)
 - Updated package.json with proper metadata
 
