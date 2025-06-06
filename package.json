@@ -10,9 +10,9 @@
     "monitor-prices": "node examples/monitor-prices.js",
     "check-activity": "node check-all-activity.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["apex", "omni", "exchange", "api", "client", "trading"],
+  "author": "Job Wiegant <job@rocketflow.nl> (RocketFlow)",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
     "apexpro-connector-node": "^0.2.0-alpha.14",

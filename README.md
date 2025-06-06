@@ -2,6 +2,16 @@
 
 A Node.js client for interacting with the Apex Omni exchange API.
 
+## Author
+
+Created by Job Wiegant of RocketFlow  
+Email: job@rocketflow.nl
+
+## Support
+
+If you find this project helpful, consider buying me a coffee!  
+☕ [Buy Me a Coffee](https://coff.ee/jobwiegant)
+
 ## Setup
 
 1. Install dependencies:
@@ -120,8 +130,17 @@ const fills = await client.getFills();
 - `getTicker(symbol)` - Get ticker data
 - `getOrderBook(symbol, limit)` - Get order book
 
+## Documentation
+
+- [Apex Pro API Documentation](https://api-docs.pro.apex.exchange/)
+- [Apex Omni Exchange](https://omni.apex.exchange)
+
 ## Security Notes
 
 - Never commit your `.env` file
 - Keep your API credentials secure
 - The `.gitignore` file excludes sensitive files
+
+## License
+
+MIT License - see [LICENSE](./LICENSE) file for details.
