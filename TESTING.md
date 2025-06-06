@@ -8,14 +8,19 @@ This guide covers how to test the apex-omni-api package during development and b
 # Install dependencies
 npm install
 
-# Run all tests
+# Test your credentials
+npm run test:credentials
+
+# Run examples
+npm run example:public    # Test public endpoints
+npm run example:private   # Test private endpoints (requires auth)
+npm run example:bot       # Run simple trading bot example
+
+# Run all tests (when available)
 npm test
 
-# Run linting
+# Run linting (when configured)
 npm run lint
-
-# Run specific test file
-npm test -- --testNamePattern="ApexOmniClient"
 ```
 
 ## Test Structure

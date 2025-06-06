@@ -4,7 +4,11 @@
   "description": "Node.js client library for interacting with the Apex Omni exchange API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:credentials": "node test-credentials.js",
+    "example:public": "node examples/easy-public.js",
+    "example:private": "node examples/easy-private.js",
+    "example:bot": "node examples/trading-bot-simple.js"
   },
   "keywords": [
     "apex",

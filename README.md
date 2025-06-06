@@ -75,6 +75,17 @@ console.log('Server time:', time);
    npm install
    ```
 
+2. Test your setup:
+   ```bash
+   # Test your API credentials
+   npm run test:credentials
+   
+   # Run examples
+   npm run example:public    # Public API examples
+   npm run example:private   # Private API examples (requires .env)
+   npm run example:bot       # Simple trading bot example
+   ```
+
 2. Create a `.env` file from the example:
    ```bash
    cp .env.example .env
